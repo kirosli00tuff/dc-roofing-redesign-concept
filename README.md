@@ -2,6 +2,8 @@
 
 This repository contains a **mobile-first, unofficial redesign concept** for [DC Roofing Inc.](https://www.dcroofing.ca/), an established Metro Vancouver roofing company. It was created independently by **Kiros Li** as a speculative demonstration and is not affiliated with, endorsed by, or commissioned by DC Roofing.
 
+**Live concept:** [dc-roofing-redesign-concept.vercel.app](https://dc-roofing-redesign-concept.vercel.app/)
+
 ## Design direction
 
 The interface follows a custom **Pacific Shield Modernism** system: storm-charcoal surfaces, mineral-white content fields, cedar survey rules, restrained Roof Lichen action signals, and repeated roof-pitch “Shelter Cut” transitions. The structure prioritizes fast mobile access to services, business proof, service areas, and estimate requests.
