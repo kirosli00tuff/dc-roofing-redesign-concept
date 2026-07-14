@@ -177,8 +177,8 @@ function ContactForm() {
     try {
       const payload = new FormData(form);
       payload.append("access_key", accessKey);
-      payload.append("subject", "DC Roofing website inquiry");
-      payload.append("from_name", "DC Roofing concept website");
+      payload.append("subject", "Demo inquiry — DC Roofing redesign concept");
+      payload.append("from_name", "Kiros Li — DC Roofing redesign concept");
 
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -188,7 +188,7 @@ function ContactForm() {
       if (!response.ok || !result.success) throw new Error("Submission failed");
 
       form.reset();
-      toast.success("Your request has been sent. The team can follow up using the details provided.");
+      toast.success("Your demo inquiry has been sent to Kiros Li, the concept designer.");
     } catch {
       toast.error("We couldn’t send your request. Please call 604-503-3500 or email info@dcroofing.ca.");
     } finally {
@@ -228,10 +228,14 @@ function ContactForm() {
         <span>How can we help? <em>*</em></span>
         <Textarea name="message" required minLength={12} placeholder="Tell us about the property, roof, and timing." rows={5} />
       </label>
+      <label className="demo-consent">
+        <input type="checkbox" name="concept_acknowledgement" value="Confirmed" required />
+        <span>I understand this is an independent redesign demo and my message will go to Kiros Li, not DC Roofing. <em>*</em></span>
+      </label>
       <div className="form-footer">
-        <p>By sending this form, you agree to be contacted about your inquiry.</p>
+        <p>For an actual roofing inquiry, use DC Roofing’s published phone number or email shown beside this demo.</p>
         <Button type="submit" disabled={submitting} className="submit-button">
-          {submitting ? "Sending…" : "Request an estimate"}
+          {submitting ? "Sending…" : "Send demo inquiry"}
           {!submitting && <ArrowRight aria-hidden="true" />}
         </Button>
       </div>
@@ -380,8 +384,8 @@ export default function Home() {
           <div className="contact-shell">
             <div className="contact-intro">
               <SectionLabel number="06">Start a conversation</SectionLabel>
-              <h2>Tell us what’s happening overhead.</h2>
-              <p>Share a few details about the property and the work you’re considering. For urgent matters, call the published customer-service number directly.</p>
+              <h2>Preview the inquiry flow.</h2>
+              <p><strong>This working form is part of an independent concept.</strong> It sends to Kiros Li, the concept designer—not DC Roofing. For a real roofing inquiry, call or email the company using its published details below.</p>
               <div className="contact-options">
                 <a href="tel:+16045033500"><Phone aria-hidden="true" /><span><small>Customer service</small>604 503 3500</span></a>
                 <a href="mailto:info@dcroofing.ca"><Mail aria-hidden="true" /><span><small>Email</small>info@dcroofing.ca</span></a>
