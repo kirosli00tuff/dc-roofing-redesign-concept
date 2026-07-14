@@ -1,3 +1,7 @@
+/**
+ * PACIFIC SHIELD MODERNISM
+ * Fixed light theme: storm-charcoal authority, mineral calm, and disciplined lichen accents.
+ */
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
@@ -26,12 +30,9 @@ function Router() {
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
+      <ThemeProvider defaultTheme="light">
         <TooltipProvider>
-          <Toaster />
+          <Toaster richColors position="top-right" />
           <Router />
         </TooltipProvider>
       </ThemeProvider>

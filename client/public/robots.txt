@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Independent redesign concept; not the official DC Roofing website.
+
