@@ -260,10 +260,6 @@ export default function Home() {
           <div className="hero-grid" aria-hidden="true" />
           <div className="hero-inner">
             <div className="hero-copy">
-              <div className="hero-brand-plate" aria-label="DC Roofing concept identity">
-                <RoofMark className="hero-brand-mark" />
-                <span><strong>DC ROOFING</strong><small>Quality roofs since 1999</small></span>
-              </div>
               <p className="eyebrow"><span /> Surrey, BC · Since 1999</p>
               <h1 id="hero-title">Built for the weather.<br /><em>Backed by the work.</em></h1>
               <p className="hero-summary">Residential, strata, and commercial roofing for homes and communities across Metro Vancouver.</p>
@@ -376,6 +372,35 @@ export default function Home() {
             </div>
             <div className="area-list" aria-label="Published service areas">
               {serviceAreas.map((area, index) => <span key={area}><b>{String(index + 1).padStart(2, "0")}</b>{area}</span>)}
+            </div>
+          </div>
+        </section>
+
+        <section id="reviews" className="reviews-section section-pad">
+          <div className="content-shell">
+            <SectionLabel number="05">Client feedback</SectionLabel>
+            <h2>What our clients say.</h2>
+            <div className="review-grid">
+              <blockquote className="review-card">
+                <p>"Thank you for doing my roof. The crew that you sent was very polite and I recommend that you give them a raise. I am so happy with the new look of my home."</p>
+                <cite>— Mary <a href="https://www.dcroofing.ca/about-us/testimonials/" target="_blank" rel="noreferrer">Published on dcroofing.ca</a></cite>
+              </blockquote>
+              <blockquote className="review-card">
+                <p>"Daryl and Chris had a great Team out to my new home purchase and got a new roof installed on time, at the price quoted and did a good job on clean up. 8 months later a leak arose that even I have to admit was not their fault however, they were able to fix it with in 72hrs and still covered it under their warranty! Honest, friendly, they show up on time and stand behind their work."</p>
+                <cite>— Ryan <a href="https://www.dcroofing.ca/about-us/testimonials/" target="_blank" rel="noreferrer">Published on dcroofing.ca</a></cite>
+              </blockquote>
+              <blockquote className="review-card">
+                <p>"The installation crew were always pleasant and positive to deal with, and very respectful of neighbors privacy, and always deported themselves with a positive approachable manner and high standards of personal behavior. Their work was of the highest of quality and the resultant installation has great 'curb appeal' adding to the pride of ownership my wife and I share related to our home."</p>
+                <cite>— Mr. & Mrs. Maloney <a href="https://www.dcroofing.ca/about-us/testimonials/" target="_blank" rel="noreferrer">Published on dcroofing.ca</a></cite>
+              </blockquote>
+              <blockquote className="review-card">
+                <p>"Basil Restoration performs renovations in the lower mainland and demands quality work from our vendors. We have nothing but good things to say about the roofing job performed for our company recently. Job well done!"</p>
+                <cite>— Basil Restoration <a href="https://www.dcroofing.ca/about-us/testimonials/" target="_blank" rel="noreferrer">Published on dcroofing.ca</a></cite>
+              </blockquote>
+              <blockquote className="review-card">
+                <p>"DC Roofing put a new asphalt roof on our house 5 years ago. Any concerns we had were dealt with quickly and completely before they expected us to pay the balance. We were really impressed when we had a leak around a vent pipe this fall. They came and fixed it, added some new shingles and some extra pipe protection around the vent with no questions asked. There 10 year warranty really does work."</p>
+                <cite>— Unnamed Client <a href="https://www.dcroofing.ca/about-us/testimonials/" target="_blank" rel="noreferrer">Published on dcroofing.ca</a></cite>
+              </blockquote>
             </div>
           </div>
         </section>
